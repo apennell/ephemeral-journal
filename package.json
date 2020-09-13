@@ -1,0 +1,27 @@
+{
+  "name": "weather-journal",
+  "version": "1.0.0",
+  "description": "A journal to save your feelings and the current temperatue",
+  "main": "server.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apennell/weather-journal.git"
+  },
+  "author": "Annie Pennell <anniecpennell@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apennell/weather-journal/issues"
+  },
+  "homepage": "https://github.com/apennell/weather-journal#readme"
+}
