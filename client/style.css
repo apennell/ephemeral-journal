@@ -1,0 +1,136 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  color: #0d080c;
+  font-family: 'Space Mono', monospace;
+  background-color: #faf4f0;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  font-family: 'BioRhyme', serif;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #074f57;
+}
+
+h1 {
+  font-size: 3.375rem;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+p {
+  font: 1rem 'Space Mono', monospace;
+}
+
+a,
+a:visited {
+  font: 600 1rem 'BioRhyme', serif;
+  color: #61946c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #74a57f;
+  text-decoration: underline;
+}
+
+button {
+  font: 600 1rem 'BioRhyme', serif;
+  color: #61946c;
+  background: #ffffff;
+  border: 2px solid #61946c;
+  padding: 0.75em;
+}
+
+button:hover {
+  color: #74a57f;
+  border-color: #74a57f;
+}
+
+/* Layout */
+.page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em 2em;
+}
+
+@media screen and (min-width: 768px) {
+  .page {
+    max-width: 768px;
+    padding: 1.5em 2em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page {
+    max-width: 1050px;
+    padding: 1.5em 2.5em;
+  }
+}
+
+main {
+  padding-bottom: 3.5em;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  height: 3.5em;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 1em 0;
+  }
+}
+
+/* Form */
+.form-field {
+  margin: 1em 0;
+}
+
+.form-field label {
+  display: block;
+}
+
+input {
+  max-width: 160px;
+  width: 100%;
+}
+
+textarea {
+  max-width: 500px;
+  width: 100%;
+}
+
+input,
+textarea {
+  padding: 0.25em 0.5em;
+  font: 1rem 'Space Mono', monospace;
+}
+
+/* Memories */
+.date,
+.empty {
+  font-style: italic;
+}

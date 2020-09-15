@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ephemeral Journal</title>
+    <meta
+      name="description"
+      content="Feelings come and go like the weather - record both and briefly save them."
+    />
+    <meta name="author" content="Annie Pennell" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BioRhyme&family=Space+Mono:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Ephemeral Journal</h1>
+        <p>
+          Feelings come and go like the weather - record both and briefly save
+          them.
+        </p>
+      </header>
+      <main>
+        <section>
+          <h2>Record a moment</h2>
+          <form>
+            <div class="form-field">
+              <label for="zip">Current zip code</label>
+              <input
+                id="zip"
+                type="text"
+                pattern="[0-9]{5}"
+                placeholder="94111"
+              />
+            </div>
+            <div class="form-field">
+              <label for="feelings">How are you feeling today?</label>
+              <textarea
+                id="feelings"
+                rows="5"
+                placeholder="I'm anxious but excited."
+              ></textarea>
+            </div>
+            <button id="generate" type="submit">Submit Entry</button>
+          </form>
+        </section>
+        <section>
+          <h2>Most recent moment</h2>
+          <div id="entry-holder">
+            <div id="date" class="date"></div>
+            <div id="temp" class="temp"></div>
+            <div id="content" class="empty memory">No recent memories...</div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <a href="http://anniepennell.com/">© Annie Pennell 2020</a>
+      </footer>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

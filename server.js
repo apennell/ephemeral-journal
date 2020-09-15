@@ -24,16 +24,16 @@ const listening = () => {
 };
 app.listen(port, listening);
 
-const projectData = { entry: 'hi' };
+// Serves as "database" to hold project data
+let projectData = {};
 
+// GET route
 app.get('/entries', (req, res) => {
   res.send(projectData);
 });
 
+// POST route
 app.post('/entry', (req, res) => {
-  console.log(req.body);
-  // TODO: add req.body to projectData:
-  // temperature
-  // date
-  // user response
+  projectData = req.body;
+  res.send({ success: true, message: 'Success' });
 });
